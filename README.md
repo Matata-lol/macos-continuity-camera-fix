@@ -25,7 +25,7 @@ bash macos-camera-fix.sh repair
 
 This checks the stored setting, requests `sudo` if needed, prints the exact proposed change, and asks you to type `YES`. It creates a protected backup before making a change. It does not ask you to send anyone your password. If the value is already `true`, it makes no change.
 
-Alternatively, double-click **Run.command** in Finder to run the same interactive workflow in Terminal. If macOS blocks a downloaded launcher, use the reviewed Terminal command above; this project does not require disabling Gatekeeper or SIP. The launcher may not retain its executable bit after some ZIP extraction tools; the Terminal command works without it.
+For a Finder shortcut, first run `chmod +x Run.command` once in the project directory, then double-click **Run.command** to run the same interactive workflow in Terminal. Web uploads and some ZIP extraction tools do not preserve executable permissions. If macOS blocks a downloaded launcher, use the reviewed Terminal command above; this project does not require disabling Gatekeeper or SIP. The Terminal command needs no executable bit.
 
 ## Commands
 

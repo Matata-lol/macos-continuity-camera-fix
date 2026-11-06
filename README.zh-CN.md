@@ -25,7 +25,7 @@ bash macos-camera-fix.sh repair --lang zh
 
 脚本会检查存储值，按需通过 `sudo` 请求管理员权限，显示具体改动，再要求输入 `YES`。真正写入前必须先成功生成并校验备份。密码由本机 `sudo` 处理，无需发送给任何人。已为 `true` 时不做修改。
 
-也可以在 Finder 中双击 **Run.command**，进入相同的终端交互流程。如果 macOS 阻止打开下载的启动器，请使用审阅后的上述终端命令；不需要关闭 Gatekeeper 或 SIP。部分 ZIP 解压工具可能不保留启动器的可执行标记，终端命令不受此影响。
+如需 Finder 快捷入口，请先在项目目录运行一次 `chmod +x Run.command`，再双击 **Run.command** 进入相同的终端交互流程。网页上传和部分 ZIP 解压工具不保留可执行权限。如果 macOS 阻止打开下载的启动器，请使用审阅后的上述终端命令；不需要关闭 Gatekeeper 或 SIP。终端命令不依赖可执行标记。
 
 ## 命令
 
