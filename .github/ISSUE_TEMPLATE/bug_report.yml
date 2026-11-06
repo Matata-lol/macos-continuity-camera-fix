@@ -1,0 +1,33 @@
+name: Diagnostic / repair problem · 检测或修复问题
+description: Report a reproducible problem without private logs or backups.
+body:
+  - type: markdown
+    attributes:
+      value: Do not attach raw logs, plist backups, device UUIDs, Apple Accounts, or serial numbers. 请勿上传原始日志、偏好备份或个人/设备标识。
+  - type: input
+    id: version
+    attributes:
+      label: Tool version / 工具版本
+    validations:
+      required: true
+  - type: input
+    id: os
+    attributes:
+      label: macOS version and build, Intel or Apple silicon / 系统版本、构建号及架构
+    validations:
+      required: true
+  - type: dropdown
+    id: users
+    attributes:
+      label: Multiple Mac users logged in? / 是否多个用户同时登录？
+      options:
+        - 'No / 否'
+        - 'Yes / 是'
+        - 'Unknown / 不确定'
+  - type: textarea
+    id: result
+    attributes:
+      label: Command, exit code, expected/actual outcome / 命令、退出码、预期与实际结果
+      description: Share only reviewed/redacted summary output. 请只提供审阅并脱敏后的摘要。
+    validations:
+      required: true

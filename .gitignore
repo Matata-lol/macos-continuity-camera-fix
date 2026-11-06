@@ -1,0 +1,8 @@
+.DS_Store
+*.log
+*.plist
+*.sha256
+backups/
+diagnostics/
+test-results/
+.env*
